@@ -1,16 +1,31 @@
 #include <iostream>
-#include <cstring>
-
 using namespace std;
 
 int main()
 {
-
     string text;
     getline(cin, text);
 
-    for (size_t i = 0; i < text.length(); ++i)
+    bool print = true;
+    for (size_t i = 0; i < text.length(); i++)
     {
-        cout << text[i];
+
+        if (isalpha(text[i]))
+        {
+            if (print)
+            {
+                cout << (char)toupper(text[i]);
+            }
+            else
+            {
+                cout << (char)tolower(text[i]);
+            }
+            print = false;
+        }
+        else
+        {
+            cout << text[i];
+            print = true;
+        }
     }
 }
