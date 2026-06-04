@@ -1,3 +1,8 @@
+125. Verify Letter Existence
+Problem
+Submissions
+Leaderboard
+Discussions
 Given two strings, write a C++ program to determine whether all the letters in the second string appear in the first string. Return true if they do, otherwise return false.
 
 Input Format
