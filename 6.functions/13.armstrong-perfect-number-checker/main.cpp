@@ -35,11 +35,32 @@ void armstrongChecker(int number)
     }
 
     if (result == original)
-        cout << "The " << original << " is an Armstrong number.";
+        cout << "The " << original << " is an Armstrong number." << endl;
     else
-        cout << "The " << original << " is not an Armstrong number.";
+        cout << "The " << original << " is not an Armstrong number." << endl;
 }
 
+void perfectNumberChecker(int number)
+{
+
+    int sum = 0;
+
+    for (int i = 1; i < number; i++)
+    {
+
+        if (number % i == 0)
+        {
+
+            sum = sum + i;
+        }
+    }
+
+    if (sum == number)
+        cout << "The " << number << " is a Perfect number." << endl;
+
+    else
+        cout << "The " << number << " is not a Perfect number." << endl;
+}
 int main()
 {
 
@@ -48,5 +69,5 @@ int main()
     cin >> number;
 
     armstrongChecker(number);
-    // perfectNumberChecker(number);
+    perfectNumberChecker(number);
 }
