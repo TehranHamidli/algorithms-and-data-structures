@@ -21,7 +21,6 @@ int main()
         }
     }
 
-    // İlkin olaraq maksimumu və indeksləri matrisin ilk elementinə bərabər götürürük
     int max = matrix[0][0];
     int max_row = 0;
     int max_col = 0;
@@ -33,8 +32,8 @@ int main()
             if (matrix[i][j] > max)
             {
                 max = matrix[i][j];
-                max_row = i; // Ən böyük ədədin olduğu sətir indeksi
-                max_col = j; // Ən böyük ədədin olduğu sütun indeksi
+                max_row = i;
+                max_col = j; 
             }
         }
     }
